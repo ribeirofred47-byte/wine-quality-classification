@@ -1,0 +1,12 @@
+﻿Variável,Quantidade de outliers,Percentual da base,Limite inferior,Limite superior
+residual sugar,110,9.62,0.85,3.65
+chlorides,77,6.74,0.04,0.12
+fixed acidity,44,3.85,4.1,12.1
+sulphates,43,3.76,0.28,1.0
+total sulfur dioxide,40,3.5,-39.0,121.0
+density,36,3.15,0.9922,1.0013
+pH,20,1.75,2.9125,3.6925
+free sulfur dioxide,18,1.57,-14.0,42.0
+volatile acidity,14,1.22,0.0213,1.0112
+alcohol,12,1.05,7.1,13.5
+citric acid,1,0.09,-0.405,0.915

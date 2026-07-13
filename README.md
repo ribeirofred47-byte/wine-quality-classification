@@ -12,7 +12,7 @@ Neste projeto, utilizamos características físico-químicas de amostras de vinh
 
 ## Objetivo
 
-Desenvolver um modelo de classificação capaz de prever se um vinho pertence à categoria de **alta qualidade** ou de **baixa/média qualidade**, utilizando suas características físico-químicas.
+Desenvolver e comparar modelos de classificação capazes de prever se um vinho pertence à categoria de **alta qualidade** ou de **baixa/média qualidade**, utilizando suas características físico-químicas.
 
 A variável original `quality` foi transformada em uma classificação binária:
 
@@ -160,34 +160,29 @@ wine-quality-classification/
 │   └── Tech_Challenge_2.ipynb
 │
 ├── results/
-│   ├── matriz_correlacao.png
-│   ├── distribuicao_qualidade.png
-│   ├── distribuicao_classes.png
-│   ├── boxplots_variaveis.png
-│   ├── importancia_variaveis.png
 │   ├── comparacao_modelos.csv
+│   ├── correlacoes_com_qualidade.png
+│   ├── distribuicao_classes.png
+│   ├── distribuicao_qualidade.png
+│   ├── distribuicao_variaveis.png
+│   ├── importancia_variaveis.png
+│   ├── matriz_correlacao.png
 │   └── tabela_outliers.csv
 │
 ├── src/
 │   └── README.md
-│
-├── presentation/
-│   ├── Tech_Challenge_Fase_2_Apresentacao.pptx
-│   └── Tech_Challenge_Fase_2_Apresentacao.pdf
 │
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
 
-Os nomes dos arquivos em `results/` representam a estrutura recomendada. Devem ser mantidos apenas os artefatos efetivamente gerados e disponibilizados pelo projeto.
-
 ## Como executar o projeto
 
 ### 1. Clonar o repositório
 
 ```bash
-git clone COLOCAR_LINK_DO_REPOSITORIO
+git clone https://github.com/ribeirofred47-byte/wine-quality-classification.git
 ```
 
 ### 2. Acessar a pasta
@@ -196,7 +191,9 @@ git clone COLOCAR_LINK_DO_REPOSITORIO
 cd wine-quality-classification
 ```
 
-### 3. Criar um ambiente virtual (opcional, mas recomendado)
+### 3. Criar um ambiente virtual
+
+A criação de um ambiente virtual é opcional, mas recomendada para isolar as dependências do projeto:
 
 ```bash
 python -m venv .venv
@@ -222,7 +219,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 6. Abrir o notebook
+### 6. Abrir e executar o notebook
 
 O notebook principal está disponível em:
 
@@ -230,13 +227,26 @@ O notebook principal está disponível em:
 notebooks/Tech_Challenge_2.ipynb
 ```
 
-Ao executar localmente, a base pode ser carregada pelo caminho relativo:
+O notebook possui configuração automática de caminhos e é compatível com diferentes ambientes de execução:
 
-```python
-df = pd.read_csv("../data/WineQT.csv")
-```
+- execução a partir da pasta `notebooks/` do repositório;
+- execução a partir da raiz do repositório;
+- execução no Google Colab com o arquivo `WineQT.csv` carregado em `/content/`.
 
-No Google Colab, o caminho deve ser adaptado de acordo com a forma de carregamento dos arquivos.
+Ao executar todas as células, os principais artefatos da análise são salvos automaticamente na pasta `results/` correspondente ao ambiente utilizado.
+
+## Resultados gerados
+
+A pasta `results/` reúne os principais artefatos produzidos durante a análise exploratória e a modelagem:
+
+- `distribuicao_classes.png`: distribuição das classes binárias e evidência do desbalanceamento do alvo;
+- `distribuicao_qualidade.png`: distribuição das notas originais de qualidade dos vinhos;
+- `distribuicao_variaveis.png`: histogramas das variáveis físico-químicas;
+- `correlacoes_com_qualidade.png`: correlação individual das variáveis com a nota de qualidade;
+- `matriz_correlacao.png`: matriz de correlação entre as variáveis analisadas;
+- `tabela_outliers.csv`: quantificação de possíveis outliers pelo método IQR;
+- `comparacao_modelos.csv`: comparação das métricas dos modelos avaliados, incluindo os experimentos com balanceamento;
+- `importancia_variaveis.png`: importância das variáveis segundo o modelo Random Forest.
 
 ## Tecnologias utilizadas
 
@@ -251,20 +261,9 @@ No Google Colab, o caminho deve ser adaptado de acordo com a forma de carregamen
 
 ## Arquivos principais
 
-- Base de dados: `data/WineQT.csv`
-- Notebook principal: `notebooks/Tech_Challenge_2.ipynb`
-- Resultados: `results/`
-- Apresentação executiva: `presentation/`
-
-## Apresentação executiva
-
-A apresentação executiva será disponibilizada na pasta `presentation/`, preferencialmente nos formatos PPTX e PDF.
-
-## Vídeo executivo
-
-O vídeo executivo poderá ser acessado pelo link abaixo após sua publicação:
-
-**Link:** COLOCAR_LINK_DO_VIDEO
+- **Base de dados:** `data/WineQT.csv`
+- **Notebook principal:** `notebooks/Tech_Challenge_2.ipynb`
+- **Resultados:** `results/`
 
 ## Integrantes
 

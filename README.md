@@ -21,8 +21,7 @@ A variável original `quality` foi transformada em uma classificação binária:
 
 ## Base de dados
 
-Foi utilizada a base **Wine Quality Dataset**, contendo informações físico-químicas de amostras de vinho. A base utilizada no projeto está disponível em `data/WineQT.csv`.
-
+Foi utilizada a base **Wine Quality Dataset**, contendo informações físico-químicas de amostras de vinho. A base utilizada no projeto está disponível em [`data/WineQT.csv`](data/WineQT.csv).
 As variáveis analisadas incluem:
 
 - acidez fixa (`fixed acidity`);
@@ -157,9 +156,11 @@ wine-quality-classification/
 │   └── WineQT.csv
 │
 ├── notebooks/
+│   ├── README.md
 │   └── Tech_Challenge_2.ipynb
 │
 ├── results/
+│   ├── README.md
 │   ├── comparacao_modelos.csv
 │   ├── correlacoes_com_qualidade.png
 │   ├── distribuicao_classes.png
@@ -172,9 +173,9 @@ wine-quality-classification/
 ├── src/
 │   └── README.md
 │
-├── requirements.txt
+├── .gitignore
 ├── README.md
-└── .gitignore
+└── requirements.txt
 ```
 
 ## Como executar o projeto
@@ -223,9 +224,7 @@ pip install -r requirements.txt
 
 O notebook principal está disponível em:
 
-```text
-notebooks/Tech_Challenge_2.ipynb
-```
+[`notebooks/Tech_Challenge_2.ipynb`](notebooks/Tech_Challenge_2.ipynb)
 
 O notebook possui configuração automática de caminhos e é compatível com diferentes ambientes de execução:
 
@@ -237,16 +236,16 @@ Ao executar todas as células, os principais artefatos da análise são salvos a
 
 ## Resultados gerados
 
-A pasta `results/` reúne os principais artefatos produzidos durante a análise exploratória e a modelagem:
+A pasta [`results/`](results/) reúne os principais artefatos produzidos durante a análise exploratória e a modelagem:
 
-- `distribuicao_classes.png`: distribuição das classes binárias e evidência do desbalanceamento do alvo;
-- `distribuicao_qualidade.png`: distribuição das notas originais de qualidade dos vinhos;
-- `distribuicao_variaveis.png`: histogramas das variáveis físico-químicas;
-- `correlacoes_com_qualidade.png`: correlação individual das variáveis com a nota de qualidade;
-- `matriz_correlacao.png`: matriz de correlação entre as variáveis analisadas;
-- `tabela_outliers.csv`: quantificação de possíveis outliers pelo método IQR;
-- `comparacao_modelos.csv`: comparação das métricas dos modelos avaliados, incluindo os experimentos com balanceamento;
-- `importancia_variaveis.png`: importância das variáveis segundo o modelo Random Forest.
+- [`distribuicao_classes.png`](results/distribuicao_classes.png): distribuição das classes binárias e evidência do desbalanceamento do alvo;
+- [`distribuicao_qualidade.png`](results/distribuicao_qualidade.png): distribuição das notas originais de qualidade dos vinhos;
+- [`distribuicao_variaveis.png`](results/distribuicao_variaveis.png): histogramas das variáveis físico-químicas;
+- [`correlacoes_com_qualidade.png`](results/correlacoes_com_qualidade.png): correlação individual das variáveis com a nota de qualidade;
+- [`matriz_correlacao.png`](results/matriz_correlacao.png): matriz de correlação entre as variáveis analisadas;
+- [`tabela_outliers.csv`](results/tabela_outliers.csv): quantificação de possíveis outliers pelo método IQR;
+- [`comparacao_modelos.csv`](results/comparacao_modelos.csv): comparação das métricas dos modelos avaliados, incluindo os experimentos com balanceamento;
+- [`importancia_variaveis.png`](results/importancia_variaveis.png): importância das variáveis segundo o modelo Random Forest.
 
 ## Tecnologias utilizadas
 
@@ -261,9 +260,9 @@ A pasta `results/` reúne os principais artefatos produzidos durante a análise 
 
 ## Arquivos principais
 
-- **Base de dados:** `data/WineQT.csv`
-- **Notebook principal:** `notebooks/Tech_Challenge_2.ipynb`
-- **Resultados:** `results/`
+- **Base de dados:** [`data/WineQT.csv`](data/WineQT.csv)
+- **Notebook principal:** [`notebooks/Tech_Challenge_2.ipynb`](notebooks/Tech_Challenge_2.ipynb)
+- **Resultados:** [`results/`](results/)
 
 ## Integrantes
 

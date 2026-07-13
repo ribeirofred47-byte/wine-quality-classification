@@ -1,4 +1,4 @@
-# 🍷 Classificação da Qualidade de Vinhos com Machine Learning
+# Classificação da Qualidade de Vinhos com Machine Learning
 
 > **Tech Challenge — Fase 2 | FIAP Pós Tech em Data Analytics**
 

@@ -1,5 +1,7 @@
-## Arquivos principais
+# Notebooks
 
-- **Base de dados:** [`data/WineQT.csv`](data/WineQT.csv)
-- **Notebook principal:** [`notebooks/Tech_Challenge_2.ipynb`](notebooks/Tech_Challenge_2.ipynb)
-- **Resultados:** [`results/`](results/)
+Esta pasta contém o notebook principal com a análise exploratória, pré-processamento, modelagem e avaliação dos modelos de Machine Learning.
+
+## Arquivo disponível
+
+- [`Tech_Challenge_2.ipynb`](Tech_Challenge_2.ipynb): notebook principal do projeto, contendo todas as etapas da análise e modelagem.

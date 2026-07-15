@@ -22,6 +22,7 @@ A variável original `quality` foi transformada em uma classificação binária:
 ## Base de dados
 
 Foi utilizada a base **Wine Quality Dataset**, contendo informações físico-químicas de amostras de vinho. A base utilizada no projeto está disponível em [`data/WineQT.csv`](data/WineQT.csv).
+
 As variáveis analisadas incluem:
 
 - acidez fixa (`fixed acidity`);
@@ -170,6 +171,10 @@ wine-quality-classification/
 │   ├── matriz_correlacao.png
 │   └── tabela_outliers.csv
 │
+├── presentation/
+│   ├── README.md
+│   └── Tech_Challenge_2_Apresentacao.pdf
+│
 ├── src/
 │   └── README.md
 │
@@ -247,6 +252,19 @@ A pasta [`results/`](results/) reúne os principais artefatos produzidos durante
 - [`comparacao_modelos.csv`](results/comparacao_modelos.csv): comparação das métricas dos modelos avaliados, incluindo os experimentos com balanceamento;
 - [`importancia_variaveis.png`](results/importancia_variaveis.png): importância das variáveis segundo o modelo Random Forest.
 
+## Apresentação executiva
+
+A apresentação sintetiza o contexto do problema, os principais insights da análise exploratória, a preparação dos dados, a comparação dos modelos e as implicações para o negócio.
+
+- [Visualizar a apresentação executiva em PDF](presentation/Tech_Challenge_2_Apresentacao.pdf)
+- [Acessar os arquivos da apresentação](presentation/)
+
+## Vídeo executivo
+
+O vídeo executivo apresenta os principais resultados do projeto em linguagem orientada ao negócio.
+
+[Assistir ao vídeo executivo no YouTube](https://youtu.be/fMdRqPEvlJs)
+
 ## Tecnologias utilizadas
 
 - Python;
@@ -263,6 +281,8 @@ A pasta [`results/`](results/) reúne os principais artefatos produzidos durante
 - **Base de dados:** [`data/WineQT.csv`](data/WineQT.csv)
 - **Notebook principal:** [`notebooks/Tech_Challenge_2.ipynb`](notebooks/Tech_Challenge_2.ipynb)
 - **Resultados:** [`results/`](results/)
+- **Apresentação executiva:** [`presentation/Tech_Challenge_2_Apresentacao.pdf`](presentation/Tech_Challenge_2_Apresentacao.pdf)
+- **Vídeo executivo:** [assistir no YouTube](https://youtu.be/fMdRqPEvlJs)
 
 ## Integrantes
 

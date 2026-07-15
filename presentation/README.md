@@ -2,7 +2,7 @@
 
 Esta pasta contém a apresentação executiva do Tech Challenge — Fase 2 da Pós Tech em Data Analytics da FIAP.
 
-## Arquivos
+## Arquivo
 
 - [Apresentação executiva em PDF](Tech_Challenge_2_Apresentacao.pdf)
 

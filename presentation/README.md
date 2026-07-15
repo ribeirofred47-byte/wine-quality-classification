@@ -8,4 +8,4 @@ Esta pasta contém a apresentação executiva do Tech Challenge — Fase 2 da P�
 
 ## Vídeo executivo
 
-[Assistir ao vídeo executivo no YouTube](https://youtu.be/fMdRqPEvlJs)
+- [Assistir ao vídeo executivo no YouTube](https://youtu.be/fMdRqPEvlJs)
